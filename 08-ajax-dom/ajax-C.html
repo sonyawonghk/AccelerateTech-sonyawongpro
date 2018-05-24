@@ -1,0 +1,44 @@
+<html>
+<head>
+</head>
+<body>
+    <script type='text/javascript' src='ajax-C.js'>
+    </script>
+</body>
+</html>
+
+
+<!--
+<body>
+    <script type='text/javascript'>
+        function whoIsInSpace(nmm) {
+            var http = newXMLHttpRequest();
+
+            http.onreadystagechange = function () {
+                if (http.readyState != XMLHttpRequest.DONE) {
+                    return;
+                } else if (http.status == 200) {
+            //standard things ///
+                    callback(data.people[x].name)
+            //change into: let parsed =JSON.parse (http.responseText);
+            nmm(parsed.people.map (function (peron){
+                return person.name;
+            }));
+                } else {
+                    console.log('error occurred' + http.status);
+                }
+            }
+        }
+
+        http.open('GET', `https://http://api.open-notify.org/astros.json/${people}/${name}`);
+            // ****no need to state which parameter you want to get//
+            //put it at the end part// 
+        http.send;
+    }
+
+        whoIsInSpace(function (name){
+            console.log(names);
+        }); 
+    </script>
+</body>
+--> 
